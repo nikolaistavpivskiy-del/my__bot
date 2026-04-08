@@ -5,7 +5,8 @@ from openai import OpenAI
 TG_TOKEN = 'ТВОЙ_ТОКЕН_ТЕЛЕГРАМ'
 DEEPSEEK_KEY = 'ТВОЙ_КЛЮЧ_DEEPSEEK'
 
-bot = telebot.TeleBot(TG_TOKEN)
+importos TG_TOKEN=os.enviviron.get('TG_TOKEN')bot=telebot.Telebot(TG_TOKEN)
+
 
 # Настраиваем клиент для DeepSeek
 client = OpenAI(api_key=DEEPSEEK_KEY, base_url="https://api.deepseek.com")
