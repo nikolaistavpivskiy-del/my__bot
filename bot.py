@@ -1,11 +1,12 @@
 import telebot
+import os
 from openai import OpenAI
 
-# Настройки
-TG_TOKEN = 'ТВОЙ_ТОКЕН_ТЕЛЕГРАМ'
-DEEPSEEK_KEY = 'ТВОЙ_КЛЮЧ_DEEPSEEK'
+# Настройки (берем из Render)
+TG_TOKEN = os.environ.get('TG_TOKEN')
+DEEPSEEK_KEY = os.environ.get('DEEPSEEK_KEY')
 
-importos TG_TOKEN=os.enviviron.get('TG_TOKEN')bot=telebot.Telebot(TG_TOKEN)
+bot = telebot.TeleBot(TG_TOKEN)
 
 
 # Настраиваем клиент для DeepSeek
