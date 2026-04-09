@@ -1,2 +1,2 @@
-pyTelegramBotAPI
-google-generativeai
+TG_TOKEN=123456
+GEMINI_KEY=AIza...
