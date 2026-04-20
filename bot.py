@@ -28,7 +28,7 @@ model = genai.GenerativeModel(os.environ.get("GEMINI_MODEL",("models/gemini-1.5-
 
 def get_main_menu():_
 keyboard = [['🚀 О проекте', '💡 Идеи'], ['❓ Помощь']]
-    return ReplyKeyboardMarkup(keyboard,resize_keyboard=True)
+return ReplyKeyboardMarkup(keyboard,resize_keyboard=True)
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
