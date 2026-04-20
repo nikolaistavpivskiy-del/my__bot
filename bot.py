@@ -24,7 +24,7 @@ logger = logging.getLogger(__name__)
 
 # 3. Инициализация Gemini
 genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
-model = genai.GenerativeModel(os.environ.get("GEMINI_MODEL", "gemini-pro"))
+model = genai.GenerativeModel(os.environ.get("GEMINI_MODEL", "gemini-1.5-flash"))
 
 def get_main_menu():
     keyboard = [['🚀 О проекте', '💡 Идеи'], ['❓ Помощь']]
