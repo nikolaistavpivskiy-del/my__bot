@@ -25,7 +25,7 @@ logger = logging.getLogger(__name__)
 # 3. Инициализация Gemini
 genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
 # ИСПРАВЛЕНО: Убрана лишняя скобка в строке ниже
-model = genai.GenerativeModel(os.environ.get("GEMINI_MODEL", "models/gemini-pro"))
+model = genai.GenerativeModel(os.environ.get("GEMINI_MODEL", "gemini-1.5 flash"))
 
 def get_main_menu():
     # ИСПРАВЛЕНО: Добавлен правильный отступ
