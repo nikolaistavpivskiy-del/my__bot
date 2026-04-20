@@ -24,11 +24,11 @@ logger = logging.getLogger(__name__)
 
 # 3. Инициализация Gemini
 genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
-model = genai.GenerativeModel(os.environ.get("GEMINI_MODEL","models/gemini-1.5-flash"))
+model = genai.GenerativeModel(os.environ.get("GEMINI_MODEL",("models/gemini-1.5-flash"))
 
 def get_main_menu():_
     keyboard = [['🚀 О проекте', '💡 Идеи'], ['❓ Помощь']]
-    return ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
+    return ReplyKeyboardMarkup(keyboard,resize_keyboard=True)
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
